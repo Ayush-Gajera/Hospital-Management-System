@@ -7,10 +7,7 @@ use app\Validators\AppointmentValidator;
 
 class AppointmentController
 {
-    /**
-     * GET /appointment
-     * Show the appointments list.
-     */
+ 
     public function index(): array
     {
         $service      = new AppointmentService();
@@ -22,10 +19,7 @@ class AppointmentController
         ];
     }
 
-    /**
-     * GET /appointment/create
-     * Show the booking form with doctor + patient dropdowns.
-     */
+ 
     public function create(): array
     {
         $service = new AppointmentService();
@@ -41,10 +35,7 @@ class AppointmentController
         ];
     }
 
-    /**
-     * POST /create/appointment
-     * Validate + persist a new appointment.
-     */
+  
     public function store(array $data): string
     {
         $validator = new AppointmentValidator();
@@ -84,10 +75,6 @@ class AppointmentController
         exit;
     }
 
-    /**
-     * POST /delete/appointment
-     * Cancel (soft-delete) a scheduled appointment.
-     */
     public function destroy(array $data): string
     {
         $id      = (int)($data['appointment_id'] ?? 0);
