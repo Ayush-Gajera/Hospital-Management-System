@@ -146,13 +146,13 @@ http://localhost:5000
 |--------|----------|-------------|
 | GET | `/patients` | List all patients |
 | GET | `/patients/create` | Show add patient form |
-| POST | `/patients/store` | Store new patient |
+| POST | `/patients/create` | Store new patient |
 | GET | `/doctors` | List all doctors |
 | GET | `/doctors/create` | Show add doctor form |
-| POST | `/doctors/store` | Store new doctor |
+| POST | `/doctors/create` | Store new doctor |
 | GET | `/appointments` | List all appointments |
 | GET | `/appointments/create` | Show book appointment form |
-| POST | `/appointments/store` | Book new appointment |
+| POST | `/appointments/create` | Book new appointment |
 | POST | `/appointments/delete/{id}` | Cancel appointment |
 
 ---
